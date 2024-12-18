@@ -1,0 +1,35 @@
+[project]
+name = "gen-ai-platform-backend"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "HarunobuTsukamoto", email = "tsukamotohrnb@sohobb.jp" }
+]
+dependencies = [
+    "fastapi>=0.115.0",
+    "uvicorn[standard]>=0.31.0",
+    "beanie>=1.26.0",
+    "requests>=2.32.3",
+    "motor>=3.6.0",
+    "isort>=5.13.2",
+    "openai>=1.51.2",
+    "firebase-admin>=6.5.0",
+    "mongoengine>=0.29.1",
+    "python-multipart>=0.0.12",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gen_ai_platform_backend"]

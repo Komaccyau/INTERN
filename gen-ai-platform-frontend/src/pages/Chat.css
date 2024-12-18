@@ -1,0 +1,94 @@
+/** @format */
+
+/* チャットアプリケーションのスタイル */
+
+.chat-wapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #eee; /* 背景色 */
+}
+
+.chat-container {
+  display: flex;
+  flex: 1; /* 残りのスペースを占める */
+  height: 100%;
+}
+
+.chat-history {
+  height: 100%;
+  padding: 10px;
+  color: #fff;
+  background-color: #3d3d3d;
+}
+
+.button-style-history {
+  border-radius: 2;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+h6 {
+  margin-bottom: 10px;
+}
+
+.history-title {
+  font-weight: bold; /* タイトルを太字に */
+  padding: 15px 0;
+  text-align: center;
+}
+
+.history-item {
+  border: 1px solid #ccc; /* 枠線 */
+  border-radius: 8px; /* 角を丸く */
+  padding: 8px; /* 内側の余白 */
+  margin-bottom: 10px; /* 下の余白 */
+}
+
+.chat-log-container {
+  margin-top: 80px; /* 応急処置 */
+  flex: 5; /* 残りのスペースを占める */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 上下にスペースを均等に */
+}
+
+/* スクロールバーを非表示にする */
+.chat-history::-webkit-scrollbar,
+.chat-log::-webkit-scrollbar {
+  display: none; /* Chrome/Safari用 */
+}
+
+/* メッセージスタイル */
+.user {
+  max-width: 50vw; /* 吹き出しの幅を半分に */
+  padding: 10px 20px;
+  word-wrap: break-word;
+  border-radius: 15px 0 15px 15px; /* 角丸 */
+  margin-left: auto;
+  margin: 5% 0;
+  /* color: #fff; */
+  color: #000;
+  background-color: #ddd;
+}
+
+.message-error {
+  word-wrap: break-word;
+  color: #777;
+}
+
+.assistant {
+  max-width: 50vw; /* 吹き出しの幅を半分に */
+  padding: 10px 20px;
+  word-wrap: break-word;
+  border-radius: 0 15px 15px 15px;
+  margin-right: auto;
+  margin: 5% 0;
+  font-weight: bold;
+  color: #000;
+  /* color: #fff; */
+  /* background-color: #69c; */
+}

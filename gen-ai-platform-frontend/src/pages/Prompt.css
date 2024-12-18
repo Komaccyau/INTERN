@@ -1,0 +1,42 @@
+/** @format */
+
+.prompt-wapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+  background-color: #eee; /* 背景色 */
+}
+
+.prompt-container {
+  display: flex;
+  flex: 1; /* 残りのスペースを占める */
+  height: 100%;
+}
+
+.prompt-create-container {
+  margin-top: 80px; /* 応急処置 */
+  flex: 5; /* 残りのスペースを占める */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* 上下にスペースを均等に */
+}
+
+/* ボタンスタイル */
+.new-prompt-button {
+  margin: 8px;
+  margin-left: 8px; /* ボタンの左にマージンを追加 */
+  background-color: black;
+  color: #eee;
+}
+
+.prompt-list-title {
+  font-size: 20px;
+  margin: 0; /* マージンをリセット */
+}
+
+/* PromptElement.tsx */
+.input-prompt-element {
+  display: flex;
+}

@@ -1,0 +1,21 @@
+/** @format */
+
+.custom-scroll {
+  overflow-y: auto; /* 縦のスクロールを有効にする */
+  overflow-x: hidden; /* 横のスクロールを無効にする */
+  scrollbar-width: none; /* Firefox用 */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.custom-scroll::-webkit-scrollbar {
+  display: none; /* Chrome/Safari用 */
+  display: none; /* Chrome/Safari用 */
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #555;
+}
